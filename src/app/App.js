@@ -11,22 +11,24 @@ import Shop from '../pages/Shop';
 import Buy from '../pages/Buy';
 import Page404 from '../pages/404';
 import Footer from '../footer/Footer';
+import OneCar from '../pages/OneCar';
 
 
 function App() {
   return (
-    <div className='app-wrapper'>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className='app-wrapper'>
         <Header />
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/Shop' element={<Shop />}></Route>
-          <Route path='/Buy' element={<Buy />}></Route>
+          <Route path='/shop' element={<Shop />}></Route>
+          <Route path='/buy' element={<Buy />}></Route>
           <Route path='*' element={<Page404 />}></Route>
+          <Route path='/car/:marca' element={<OneCar />}></Route>
         </Routes>
-        <Footer />
-      </BrowserRouter>
-    </div>
+      </div>
+      <Footer />
+    </BrowserRouter >
   );
 }
 
