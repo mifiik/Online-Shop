@@ -19,7 +19,14 @@ export const auto = [
       color: 'metalik',
       price: 70000,
       foto: A6,
-      desc: 'description for Audi'
+      desc: 'Audi A6',
+      BodyType: 'sedan',
+      SeatingCapacity: 5,
+      FuelType: 'diesel',
+      cylinder: 4,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 73,
+      MaxPower: 216,
    },
 
    {
@@ -28,7 +35,14 @@ export const auto = [
       color: 'silver',
       price: 120000,
       foto: A8,
-      desc: 'description for Audi'
+      desc: 'Audi A8',
+      BodyType: 'sedan',
+      SeatingCapacity: 5,
+      FuelType: 'diesel',
+      cylinder: 4,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 73,
+      MaxPower: 216,
    },
 
    {
@@ -37,7 +51,14 @@ export const auto = [
       color: 'blue',
       price: 150000,
       foto: BMW7,
-      desc: 'description for Audi'
+      desc: 'BMW 7',
+      BodyType: 'sedan',
+      SeatingCapacity: 5,
+      FuelType: 'benzin',
+      cylinder: 8,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 103,
+      MaxPower: 350,
    },
 
    {
@@ -46,7 +67,14 @@ export const auto = [
       color: 'white',
       price: 90000,
       foto: BMWX5,
-      desc: 'description for Audi'
+      desc: 'BMW X5',
+      BodyType: 'SUV',
+      SeatingCapacity: 7,
+      FuelType: 'diesel',
+      cylinder: 6,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 80,
+      MaxPower: 276,
    },
 
    {
@@ -55,16 +83,30 @@ export const auto = [
       color: 'blue',
       price: 15000,
       foto: E39,
-      desc: 'description for BMW'
+      desc: 'BMW E39',
+      BodyType: 'sedan',
+      SeatingCapacity: 5,
+      FuelType: 'diesel',
+      cylinder: 4,
+      TransmissionType: 'Manual',
+      FuelTankCapacity: 50,
+      MaxPower: 170,
    },
 
    {
       id: 6,
-      marca: ' BMW X6',
+      marca: 'BMW X6',
       color: 'braun',
       price: 80000,
       foto: X6,
-      desc: 'description for Audi'
+      desc: 'BMW X6',
+      BodyType: 'SUV',
+      SeatingCapacity: 6,
+      FuelType: 'Benzin',
+      cylinder: 8,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 90,
+      MaxPower: 300,
    },
 
    {
@@ -73,7 +115,14 @@ export const auto = [
       color: 'jeloow',
       price: 300000,
       foto: Ferrari,
-      desc: 'description for Audi'
+      desc: 'Ferrari',
+      BodyType: 'sedan',
+      SeatingCapacity: 2,
+      FuelType: 'Benzin',
+      cylinder: 12,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 60,
+      MaxPower: 576,
    },
 
    {
@@ -82,7 +131,14 @@ export const auto = [
       color: 'red',
       price: 250000,
       foto: Lamborghini,
-      desc: 'description for Audi'
+      desc: 'Lamborghini',
+      BodyType: 'sedan',
+      SeatingCapacity: 2,
+      FuelType: 'Benzin',
+      cylinder: 10,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 70,
+      MaxPower: 650,
    },
 
    {
@@ -91,15 +147,29 @@ export const auto = [
       color: 'silver',
       price: 18000,
       foto: octavia,
-      desc: 'description for Audi'
+      desc: 'Skoda Octavia',
+      BodyType: 'sedan',
+      SeatingCapacity: 5,
+      FuelType: 'diesel',
+      cylinder: 4,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 63,
+      MaxPower: 140,
    },
 
    {
       id: 10,
-      marca: 'skoda Superb',
+      marca: 'Skoda Superb',
       color: 'braun',
       price: 32000,
       foto: superb,
-      desc: 'description for Audi'
+      desc: 'Skoda Superb',
+      BodyType: 'sedan',
+      SeatingCapacity: 5,
+      FuelType: 'Benzin',
+      cylinder: 4,
+      TransmissionType: 'Automatic',
+      FuelTankCapacity: 81,
+      MaxPower: 175,
    },
 ]

@@ -16,19 +16,23 @@ import OneCar from '../pages/OneCar';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='app-wrapper'>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home />}></Route>
-          <Route path='/shop' element={<Shop />}></Route>
-          <Route path='/buy' element={<Buy />}></Route>
-          <Route path='*' element={<Page404 />}></Route>
-          <Route path='/car/:marca' element={<OneCar />}></Route>
-        </Routes>
-      </div>
-      <Footer />
-    </BrowserRouter >
+    <div className='app'>
+      <BrowserRouter>
+        <div className='app-wrapper'>
+          <Header />
+          <div className='main'>
+            <Routes>
+              <Route path='/' element={<Home />}></Route>
+              <Route path='/shop' element={<Shop />}></Route>
+              <Route path='/buy' element={<Buy />}></Route>
+              <Route path='*' element={<Page404 />}></Route>
+              <Route path='/car/:marca' element={<OneCar />}></Route>
+            </Routes>
+          </div>
+        </div>
+        <Footer />
+      </BrowserRouter >
+    </div>
   );
 }
 

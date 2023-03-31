@@ -1,9 +1,12 @@
 import React from 'react';
+import CarouselBox from '../carousel/CarouselBox';
 import './pages.css';
 
 function Home() {
    return (
-      <div>Home</div>
+      <>
+         <CarouselBox />
+      </>
    )
 }
 
