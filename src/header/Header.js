@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
    return (
@@ -10,9 +10,12 @@ function Header() {
             <h3 className='logo__surname'>FOSTER</h3>
          </div>
          <ul className='list'>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/shop'>Shop</Link></li>
-            <li><Link to='/buy'>Buy</Link></li> 
+            {/* <li><Link to='/'>Home</Link></li> */}
+            <li><NavLink to='/' style={({ isActive }) => ({ color: isActive ? 'red' : '' })}>Home</NavLink></li>
+            {/* <li><Link to='/shop'>Shop</Link></li> */}
+            <li><NavLink to='/shop' className={({ isActive }) => (isActive ? 'first' : '')}>Shop</NavLink></li>
+            {/* <li><Link to='/buy'>Buy</Link></li> */}
+            <li><NavLink to='/buy' className={({ isActive }) => (isActive ? 'first' : '')}>Buy</NavLink></li>
          </ul>
       </div>
    )

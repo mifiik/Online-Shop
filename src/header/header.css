@@ -31,11 +31,34 @@
    flex-direction: row;
    justify-content: space-between;
    width: 100%;
-
 }
 
 .list li {
-   /* flex: 1; */
    text-align: center;
-   border: 1px solid;
+   border: 1px solid  aqua;
+   background-color: aqua;
+   border-radius: 4px;
+   font-size: 18px;
+   padding: 5px;
+}
+
+.first {
+   color: red;
+   font-weight: 900;
+}
+
+
+
+
+
+/* ADAPTIV */
+
+@media(max-width:576px) {
+   .header {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .logo{
+      margin-bottom: 20px;
+   }
 }

@@ -11,3 +11,10 @@
 .main {
    flex: 1 1 auto;
 }
+
+
+@media(max-width:576px){
+   .app-wrapper {
+      padding: 20px 5px 0 5px;
+   } 
+}

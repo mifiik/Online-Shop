@@ -1,0 +1,103 @@
+/* Shop */
+.final-auto {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards {
+   margin-bottom: 20px;
+}
+
+.cards__img {
+   width: 350px;
+   height: 300px;
+}
+
+.cards__img img {
+   width: 100%;
+   height: 100%;
+}
+
+.discription {
+   margin-bottom: 8px;
+}
+
+.cards__button {
+   padding: 5px 15px;
+   background-color: brown;
+   color: rgb(32, 9, 30);
+   border: 1px transparent;
+   border-radius: 10px;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+
+/* OneCar */
+.car-description {
+   display: flex;
+   margin-bottom: 18%;
+}
+
+.car-foto {
+   width: 300px;
+}
+
+.car-foto img {
+   width: 100%;
+   height: 100%;
+}
+
+.description li {
+   margin-bottom: 8px;
+}
+
+.description li:last-child {
+   margin-bottom: 0;
+}
+
+.marca {
+   font-size: 26px;
+   font-weight: 700;
+   color: rgb(255, 0, 0);
+   margin-bottom: 12px;
+}
+
+
+
+
+
+
+/* ADAPTIV */
+@media(max-width:1180px) {
+   .final-auto {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media(max-width:992px) {
+   .final-auto {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-self: center;
+      justify-self: center;
+   }
+}
+
+@media(max-width:576px) {
+   .car-description {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .car-foto {
+      margin-bottom: 20px;
+   }
+
+   .center-adapt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}

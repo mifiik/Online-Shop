@@ -1,6 +1,7 @@
 import React from 'react'
-import { Carousel } from 'bootstrap'
-import { CarouselItem } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
+import './carusel.css'
 import A6 from '../img/A6.jpg'
 import A8 from '../img/A8.jpg'
 import BMW7 from '../img/BMW7.jpg'
@@ -16,37 +17,128 @@ function CarouselBox() {
    return (
       <>
          <Carousel>
-            <CarouselItem>
-               <img className='d-block' src={A6} alt='auto foto' />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={A8} />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={BMW7} />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={BMWX5} />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={E39} />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={Ferrari} />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={Lamborghini} />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={octavia} />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={superb} />
-            </CarouselItem>
-            <CarouselItem>
-               <img className='d-block w-100' src={X6} />
-            </CarouselItem>
-         </Carousel>g
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={A6}
+                  alt="First slide"
+               />
+               <Carousel.Caption>
+                  <h3>AUDI A6</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={A8}
+                  alt="Second slide"
+               />
+
+               <Carousel.Caption>
+                  <h3>AUDI A8</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={BMW7}
+                  alt="Third slide"
+               />
+
+               <Carousel.Caption>
+                  <h3>BMW 7</h3>
+                  <p>
+                     Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                  </p>
+               </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={BMWX5}
+                  alt="First slide"
+               />
+               <Carousel.Caption>
+                  <h3>BMW 5</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={E39}
+                  alt="First slide"
+               />
+               <Carousel.Caption>
+                  <h3>E39</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={Ferrari}
+                  alt="First slide"
+               />
+               <Carousel.Caption>
+                  <h3>FERRARI</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={Lamborghini}
+                  alt="First slide"
+               />
+               <Carousel.Caption>
+                  <h3>LAMBORGHINI</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={octavia}
+                  alt="First slide"
+               />
+               <Carousel.Caption>
+                  <h3>SKODA OCTAVIA</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={superb}
+                  alt="First slide"
+               />
+               <Carousel.Caption>
+                  <h3>SKODA SUPERB</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+               <img
+                  className="images"
+                  src={X6}
+                  alt="First slide"
+               />
+               <Carousel.Caption>
+                  <h3>BMW X6</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+               </Carousel.Caption>
+            </Carousel.Item>
+         </Carousel>
       </>
    )
 }
