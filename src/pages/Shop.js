@@ -2,11 +2,19 @@ import React from 'react';
 import './pages.css';
 import { auto } from '../array/ProductArray';
 import { Link } from 'react-router-dom';
-
+// localStorage.clear()
 function ShopTeamplate({ marca, price, foto, id }) {
    // console.log(id)
    function addProduct() {
-      console.log(id, marca)
+      const allCars = []
+      const oneCar = {
+         id: id,
+         marca: marca,
+         price: price,
+         foto: foto,
+      }
+      allCars.push(oneCar)
+      localStorage.setItem('car', JSON.stringify(allCars))
    }
    return (
       <div className='cards'>

@@ -15,7 +15,7 @@ function Header() {
             {/* <li><Link to='/shop'>Shop</Link></li> */}
             <li><NavLink to='/shop' className={({ isActive }) => (isActive ? 'first' : '')}>Shop</NavLink></li>
             {/* <li><Link to='/buy'>Buy</Link></li> */}
-            <li><NavLink to='/buy' className={({ isActive }) => (isActive ? 'first' : '')}>Buy</NavLink></li>
+            <li><NavLink to='/buy' className={({ isActive }) => (isActive ? 'first' : '')}>Card Shop</NavLink></li>
          </ul>
       </div>
    )

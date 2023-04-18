@@ -64,9 +64,41 @@
 }
 
 
+/* Buy */
+.buy-container {
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+}
 
+.buy {
+   display: flex;
+   flex-direction: column;
+}
 
+.buy__foto {
+   width: 300px;
+   margin-bottom: 12px;
+}
 
+.buy__foto img {
+   width: 100%;
+   height: 100%;
+}
+
+.buy__marca {
+   font-size: 26px;
+   font-weight: 700;
+   color: rgb(255, 0, 0);
+   margin-bottom: 12px;
+
+}
+
+.buy__price {
+   font-size: 26px;
+   font-weight: 700;
+   color: rgb(255, 0, 0);
+}
 
 /* ADAPTIV */
 @media(max-width:1180px) {
