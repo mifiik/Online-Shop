@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function ShopTeamplate({ marca, price, foto, id }) {
    // console.log(id)
    function addProduct() {
-      const allCars = []
+      const allCars = JSON.parse(localStorage.getItem("car") || "[]");
       const oneCar = {
          id: id,
          marca: marca,

@@ -12,8 +12,8 @@ function BuyTemplate({ id, foto, marca, price }) {
    )
 }
 function Buy() {
-   let result = localStorage.getItem('car')
-   let resultObject = JSON.parse(result)
+   let resultObject = JSON.parse(localStorage.getItem('car'))
+   // let empty = ('car' == true) ? 0 : ''
    console.log(resultObject)
    let resultCar = resultObject.map((el, i) => {
       return <BuyTemplate key={i} foto={el.foto} marca={el.marca} price={el.price} />

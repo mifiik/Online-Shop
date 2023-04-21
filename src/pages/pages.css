@@ -74,6 +74,7 @@
 .buy {
    display: flex;
    flex-direction: column;
+   margin-bottom: 115px;
 }
 
 .buy__foto {
