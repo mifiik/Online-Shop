@@ -16,8 +16,9 @@ import OneCar from '../pages/OneCar';
 
 function App() {
   return (
-    <div className='app'>
-      <BrowserRouter>
+
+    <BrowserRouter>
+      <div className='app'>
         <div className='app-wrapper'>
           <Header />
           <div className='main'>
@@ -31,8 +32,9 @@ function App() {
           </div>
         </div>
         <Footer />
-      </BrowserRouter >
-    </div>
+      </div >
+    </BrowserRouter >
+
   );
 }
 
